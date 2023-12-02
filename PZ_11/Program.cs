@@ -1,9 +1,10 @@
-﻿namespace ConsoleApp2
+﻿namespace PZ_11
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            // Вводим нужные нам переменные и делаем красивый ввод
             double a;
             double b;
             double c;
@@ -26,9 +27,10 @@
             Console.WriteLine(y);
         }
 
+        // сам метод без возрата значений void
         static void GetResult(double a, double b, double c, out double x, out double y)
         {
-
+            // вычмсление x1 и x2, для удобства обозначил x и y
             double d = 0;
             double z = 0;
             d = ((b * b) - 4 * a * c);
