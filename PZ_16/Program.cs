@@ -385,10 +385,11 @@ namespace ConsoleApp8
                         enemyhealt = enemyhealt - playerbuff;
                         playerhealt -= 5;
                         playerminus += 5;
-                        killenemy--;
+                        
                     }
                     PrintCenteredText($"Сражения: Бой с врагом. Вы потеряли {playerminus} здоровья!", CenterY + 4);
                     map[playerX, playerY] = '_';
+                    killenemy--;
 
                     enemyhealt = 30;
                     playerminus = 0;
