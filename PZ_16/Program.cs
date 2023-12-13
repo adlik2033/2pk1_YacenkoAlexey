@@ -370,13 +370,13 @@ namespace ConsoleApp8
                     {
                         Console.SetCursorPosition(playerY, playerX);
                         Console.Write('?');
-                        Thread.Sleep(60);
+                        Thread.Sleep(300);
                         Console.SetCursorPosition(playerY, playerX);
                         Console.Write('/');
-                        Thread.Sleep(60);
+                        Thread.Sleep(300);
                         Console.SetCursorPosition(playerY, playerX);
                         Console.Write('#');
-                        Thread.Sleep(60);
+                        Thread.Sleep(300);
                     }
                     Console.Write('_');
 
@@ -466,25 +466,25 @@ namespace ConsoleApp8
                     switch (Console.ReadKey().Key)
                     {
                         case ConsoleKey.UpArrow:
-                            Thread.Sleep(500); // сон
+                            Thread.Sleep(150); // сон
                             playerX--;
                             count++;
                             newcount++;
                             break;
                         case ConsoleKey.DownArrow:
-                            Thread.Sleep(500); // сон
+                            Thread.Sleep(150); // сон
                             playerX++;
                             count++;
                             newcount++;
                             break;
                         case ConsoleKey.LeftArrow:
-                            Thread.Sleep(500); // сон
+                            Thread.Sleep(150); // сон
                             playerY--;
                             count++;
                             newcount++;
                             break;
                         case ConsoleKey.RightArrow:
-                            Thread.Sleep(500); // сон
+                            Thread.Sleep(150); // сон
                             playerY++;
                             count++;
                             newcount++;
@@ -515,12 +515,12 @@ namespace ConsoleApp8
                     map[playerY, playerX] = 'P';
                     Console.SetCursorPosition(playerY, playerX);
                     Console.Write('P');
-                    Console.ForegroundColor = ConsoleColor.Magenta; // Путь за игроком
+                    Console.ForegroundColor = ConsoleColor.Blue; // Путь за игроком
                     Console.SetCursorPosition(0, mapSize);
 
 
                     Console.SetCursorPosition(0, 25);
-                    Console.WriteLine($"Здоровье: {playerhealt}, Сила: {playerbuff}, Шагов: {newcount}");
+                    Console.WriteLine($"Здоровье: {playerhealt } , Сила: {playerbuff } , Шагов: {newcount } ");
 
 
                     // механики 
